@@ -1,0 +1,104 @@
+.messageHP{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: .5vw 5vw;
+}
+
+.messageHP h1{
+   font-size: 36px;
+   font-weight: bold;
+   margin-top: 100px;
+ }
+
+.messageHP p {
+    font-size: 24px;  
+    line-height: 30px;   
+    margin: 32px 0;
+}
+
+.inputHP {
+    display: flex;
+    margin: 25px 5vw;
+}
+
+.inputHP input{
+  width: 292px;
+  height: 62px;
+  padding: 10px;
+  margin-right: 32px;
+  border-radius: 30px;
+  border: 1px solid #C4C4C4;
+  font-size: 20px;
+  transition: 1s;
+}
+
+.inputHP button{
+  width: 232px;
+  height: 63px;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #FFFFFF;  
+  background: #FF601C;
+  border: 1px solid #FF601C;
+  transition: 1s;
+}
+
+.inputHP button:focus,
+.inputHP input:focus{
+  outline: none;
+  border: 0;
+}
+
+
+/***************************MEDIA QUERIES***************************/
+
+@media (max-width: 841px) {
+    .inputHP {
+        flex-direction: column;
+    }
+    .inputHP input {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+    .inputHP button{
+        width: 292px;
+        margin-bottom: 100px;
+      }      
+}
+
+
+@media (max-width: 450px) {
+    .modal-content p {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+    .modal-content span {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+       
+    .inputHP button {
+        margin-bottom: 100px;
+        margin-right: 8px;
+        width: 260px;
+    }
+     
+    .inputHP input {
+        width: 260px;
+        margin-right: 8px;
+    }
+
+    .messageHP h1 {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    .messageHP p {
+        font-size: 16px;
+        text-align: justify;
+    }
+}

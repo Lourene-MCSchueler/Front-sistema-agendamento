@@ -1,0 +1,80 @@
+.main-error-container {
+    width: 100vw;
+    height: 100%;
+    min-height: 100vh;
+    background-color: #36357E;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-error-container .image-error{
+    display: flex;
+    justify-content: start;
+    margin: 20px;
+}
+
+.main-error-container span {
+    border-radius: 10px;
+    font-size: 26px;
+    color: #FFF;
+    font-weight: bold;
+    padding: 20px 20px 20px 20px;
+}
+
+.main-error-container p {
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFF;
+}
+
+
+.error-information{
+    margin-top: 150px;
+    margin-bottom: 25px;
+}
+
+.error-information h1 {
+    color: #FFF;
+    font-size: 125px;
+    line-height: 98px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.error-information div {
+    height: 30%;
+}
+
+.error-information a {
+    text-decoration: none;
+}
+
+.error-information a:hover {
+     color: #FFF;
+}
+
+.main-error-information{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/***************************MEDIA QUERIES***************************/
+
+@media(max-width:430px) {
+.main-error-container .image-error {
+  display: none;
+ }
+.main-error-container h1 {
+  font-size: 50px;
+ }
+.main-error-container p {
+  font-size: 20px;  
+ }
+.error-information p {
+ font-size: 18px; 
+}
+}

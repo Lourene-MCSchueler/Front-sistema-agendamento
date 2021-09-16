@@ -1,0 +1,105 @@
+.messageCP{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: .5vw 5vw;
+}
+
+.messageCP h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.messageCP p {
+    font-size: 24px;
+    line-height: 30px;    
+    margin: 32px 0;
+}
+
+.formCP {
+    display: flex;
+    margin: 25px 5vw;
+}
+
+.formCP input {
+    width: 292px;
+    height: 62px;
+    padding: 10px;
+    margin-right: 32px;
+    border-radius: 30px;
+    border: 1px solid #C4C4C4;
+    font-size: 20px;
+    transition: 1s;
+}
+
+.formCP button {
+    width: 232px;
+    height: 63px;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #FFFFFF;  
+    background: #FF601C;
+    border: 1px solid #FF601C;
+    transition: 1s;
+}
+
+.formCP input:focus,
+.formCP button:focus{
+  outline: none;
+}
+
+.modal {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+/***************************MEDIA QUERIES***************************/
+@media (max-width: 841px) {
+    .formCP {
+        flex-direction: column;
+    }
+    .formCP input {
+        font-size: .8rem;
+        margin-bottom: 10px;
+    }
+    .formCP button {
+        margin-bottom: 100px;
+        width: 292px;
+    }
+ }
+
+@media (max-width: 450px) {
+    .modal-content p {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+    .modal-content span {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+       
+    .formCP button {
+        margin-bottom: 100px;
+        margin-right: 8px;
+        width: 260px;
+    }
+     
+    .formCP input {
+        width: 260px;
+        margin-right: 8px;
+    }
+
+    .messageCP h1 {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    .messageCP p {
+        font-size: 16px;
+        text-align: justify;
+    }
+}

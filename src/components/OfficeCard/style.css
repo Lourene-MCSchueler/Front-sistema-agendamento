@@ -1,0 +1,299 @@
+.office-card {
+    width: 100%;
+}
+
+.office-card span {
+    font-size: 16px;
+    line-height: 20px;
+    color: #7D7D7D;
+}
+
+.office-card .office-information {
+    display: flex;
+    margin: 16px 0;
+    box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;    
+    background-color: #FFF;
+    width: 100%;
+}
+
+.work-day {
+    border-right: 1.5px solid rgba(0, 0, 0, 0.5);
+    padding: 20px 2vw;
+    border-collapse: collapse;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px 0 0 15px;
+}
+
+.work-reunion {
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 2vw;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    border-radius: 0 15px 15px 0;
+}
+
+.work-day span {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+    color: #FF601C;
+    margin-bottom: 32px;
+}
+
+.work-reunion span {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+    color: #36357E;
+    margin-bottom: 32px;
+}
+
+.work-day select {
+    border: 1px solid #FF601C;
+    background-color: #FFF;
+    width: 180px;
+    height: 37px;
+    margin-bottom: 106px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.work-reunion select {
+    border: 1px solid #36357E;
+    background-color: #FFF;
+    width: 180px;
+    height: 37px;
+    margin-bottom: 16px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.work-day button {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    margin-top: 70px;
+    width: 260px;
+    height: 60px;
+    background: #FF601C;
+    border: 1px solid #FF601C;
+    cursor: pointer;
+    
+}
+.work-reunion button {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    width: 260px;
+    height: 60px;
+    background: #36357E;
+    border: 1px solid #36357E;
+    cursor: pointer;
+}
+
+button, 
+select {
+    outline: none;
+}
+
+button:focus{
+    outline: none;
+}
+
+.bold-p{
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.info-p{
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+}
+
+.time-select {
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.time-select div {text-align: center;}
+.time-select select {width: 85px;}
+.time-select p { margin: 0;}
+
+
+.room-container {
+    height: 50px;
+    margin-bottom: 30px;
+    width: 260px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content-children{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.modal-content-children p{
+    font-size: 24px;
+    line-height: 25px;
+    padding: 0 8px;
+}
+
+.modal-content-children .modal-reunion-info{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    line-height: 32px;
+}
+
+.modal-content-children .modal-reunion-info .info{
+    display: flex;
+}
+
+.modal-content-children .modal-reunion-info p{
+    padding: 4px 8px;
+}
+
+.modal-content-children .modal-email-input{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    width: 100%;
+}
+
+.modal-content-children .modal-email-input p{
+    font-size: 18px;
+    line-height: 25px;
+    padding: 4px 0;
+}
+
+.modal-content-children .modal-email-input label{
+    padding: 4px 0;
+    color:  rgba(0, 0, 0, 0.3);
+}
+
+.modal-content-children .modal-email-input input{
+   border-top: 0; 
+   border-left: 0; 
+   border-right: 0;
+   border-bottom: 2px solid black;
+   width: 100%;
+}
+.modal-content-children .modal-email-input input:focus{
+    outline: none;
+}
+
+
+/***************************MEDIA QUERIES***************************/
+@media screen and (max-width:825px) {
+.office-card .office-information {
+    flex-direction: column;
+}
+
+.office-card span {
+    padding-top: 20px;
+}
+.work-day {
+    border-right: 0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.15);  
+}
+.work-reunion {
+    padding-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.15);   
+}
+.info-p{
+    font-size: 12px;
+}
+.bold-p{
+    font-size: 16px;
+}
+}
+
+@media(max-width:640px) {
+.work-day span,
+.work-reunion span {
+    font-size: 16px;
+}
+.work-day select,
+.work-reunion select {
+    width: 163px;
+    height: 40px;
+    border-radius: 34px;
+}
+.work-day button,
+.work-reunion button {
+    width: 195px;
+    height: 45px;
+    font-size: 16px;
+}
+.modal-content-children p{
+    font-size: 20px;
+}
+.modal-content-children .modal-reunion-info{
+    font-size: 24px;
+}
+.modal-content-children .modal-email-input p{
+    font-size: 16px;
+}
+.time-select {
+    flex-direction: column;
+}
+.time-select select {
+    width: 75px;
+}
+}
+
+@media(max-width:350px) {
+.modal-content-children p{
+    font-size: 16px;
+}
+.modal-content-children .modal-reunion-info{
+    font-size: 24px;
+}
+.modal-content-children .modal-email-input input{
+    width: 45%;
+}
+.modal-content-children .modal-email-input p{
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0;
+    width: 60%;
+}
+.modal-content-children .modal-email-input label{
+    font-size: 12px;
+}
+.office-card span {
+    font-size: 10px;
+}
+.work-day span,
+.work-reunion span {
+    font-size: 16px;
+}
+.work-day button {
+    margin-top: 40px;
+}
+}

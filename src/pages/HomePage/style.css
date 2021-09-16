@@ -1,0 +1,153 @@
+.box-top {
+   display: flex;  
+   margin: 25px 5vw;
+}
+
+.box-top .message-home h1 {
+  text-align: center;
+  margin-top: 5.75rem;
+  margin-bottom: 2rem;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.box-top .message-home {
+  font-size: 24px;
+  line-height: 34px;
+  text-align: justify;
+  margin-bottom: 5rem;
+  width: 60%;
+}
+
+.box-top .image {
+  display: flex;
+  max-width: 376px;
+  min-width: 180px;
+  max-height: 282px;
+  min-height: 150px;
+  margin-right: 1.4vw;
+  margin-top: 6rem;
+  width: 40%;
+}
+
+.box-top img{
+  width: 100%;
+}
+
+.box-bottom .links {
+  display: flex;
+  flex-direction: column; 
+  margin: 25px 5vw;
+}
+
+.box-bottom .links .to {
+  text-decoration: none; 
+}
+
+.box-bottom .link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #000000;
+  width: auto;
+  height: 55px;
+}
+
+.box-bottom .link img{
+  padding-right: 1rem;
+  height: 55px;
+}
+
+
+/***************************MEDIA QUERIES***************************/
+@media screen and (max-width:1440px) {
+.box-top .message-home .without-aside {
+  display: none;
+}
+}
+
+@media screen and (max-width:1024px) {
+.box-top .message-home {
+  margin-bottom: 4rem;
+  }
+.box-top .image {
+  margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width:940px) {
+.box-top .message-home {
+  margin-bottom: 2.5rem;
+  }
+}
+
+@media screen and (max-width:835px) {
+.box-top .message-home {
+  margin-bottom: 2rem;
+  font-size: 22px;
+  }
+.box-bottom .link {
+  margin-bottom: 1.2rem;
+  font-size: 18px;
+  }
+}
+
+@media screen and (max-width:768px) {
+.box-top{
+  margin: .8rem;
+}
+}
+
+@media screen and (max-width:710px) {
+.box-top .image {
+  margin-top: 3.5rem;
+  width: 15%;
+}
+.box-top .message-home {
+  font-size: 18px;
+}
+}
+
+@media screen and (max-width:660px) {
+.box-top .message-home .with-aside {
+  display: none;
+}
+.box-top .message-home .without-aside {
+  display: inline;
+}
+
+.box-top .image{
+  display: none;
+}
+.box-top .message-home {
+  width: 100%;
+}
+.box-bottom .links {
+  margin: 0.8rem;
+}
+.box-bottom .link {
+  margin-bottom: 1.2rem;
+  font-size: 16px;
+}
+}
+
+@media screen and (max-width:380px) {
+.box-bottom .link img{
+  height: 35px;
+}
+.box-bottom .link {
+  font-weight: bold;
+  font-size: 14px;
+}
+.box-top .message-home h1 {
+  font-size: 30px;
+  margin-top: 50px;
+}
+.box-top .message-home {
+  font-size: 16px;
+}
+}
+

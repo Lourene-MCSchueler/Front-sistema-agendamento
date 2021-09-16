@@ -1,0 +1,67 @@
+.pageH {
+    width: 100vw;
+    height: auto;
+    padding: 30px 4vw 30px 4vw;
+    background-image: linear-gradient(#FFF 50%, #36357E 50%);
+}
+
+.pageH .container-page {
+    display: flex;
+    border: 1px solid #FE885C;
+    border-radius: 30px;
+    background: #F9F8F8;
+    height: auto;
+    width: 100%;
+}
+
+.pageH .white-page {
+    background: #F9F8F8;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 30px 30px 0;
+}
+
+.pageH .images {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.pageH .images .logo{
+  width: 229px;
+  height: 50px;
+  margin: 15px 5vw 20px 1vw;
+}
+
+.pageH .images .agenda{
+  width: 402px;
+  height: 35px;
+  margin: 15px 0 20px;
+}
+
+.pageH .aside-mob {
+  display: none;
+}
+
+/***************************MEDIA QUERIES***************************/
+
+@media(max-width:660px) {
+.pageH .aside-desk {
+  display: none;
+}
+.pageH .aside-mob {
+  display: block;
+  margin-left: -1px;
+}
+.pageH .white-page,
+.pageH .container-page {
+   border-radius: 0;
+}
+.pageH .images {
+  display: none;
+}
+.pageH {
+  padding: 0;
+}
+}

@@ -1,0 +1,24 @@
+.room-icon {
+    font-size: 12px;
+    min-width: 60px;
+    height: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 1.5px solid #C4C4C4;
+    margin-right: 10px;
+    font-weight: bold;
+    cursor: default;
+}
+
+.room-icon .available{
+        border: 1.4px solid #36357E;
+        cursor: pointer;
+}
+
+.room-icon:hover {
+            background-color: #36357E; 
+            color: #FFF;
+        }

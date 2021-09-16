@@ -1,0 +1,70 @@
+.page {
+    width: 100vw;
+    height: auto;
+    padding: 30px 4vw 30px 4vw;
+    background-image: linear-gradient(#FFF 50%, #36357E 50%)
+}
+
+.page .container-page {
+    display: flex;
+    border: 1px solid #FE885C;
+    background: #F9F8F8;
+    border-radius: 30px;
+    height: auto;
+    width: 100%;  
+}
+
+.page .white-page {
+    background: #F9F8F8;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 30px 30px 0;
+}
+
+.page .images {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.page .images .logo{
+  width: 229px;
+  height: 50px;
+  margin: 15px 5vw 20px 1vw;
+}
+
+.page .images .pontilhado{
+  width: 118px;
+  height: 69px;
+  margin: 10px 3vw;
+}
+
+.page .aside-mob {
+  display: none;
+}
+
+/***************************MEDIA QUERIES***************************/
+
+@media(max-width:660px) {
+.page .aside-desk {
+  display: none;
+}
+.page .aside-mob {
+  display: block;
+  margin-left: -1px;
+}
+.page .white-page {
+  align-items: center;
+}
+.page .white-page,
+.page .container-page {
+   border-radius: 0;
+}
+.page .images {
+  display: none;
+}
+.page {
+  padding: 0;
+}
+}

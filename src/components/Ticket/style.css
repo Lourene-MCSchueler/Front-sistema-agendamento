@@ -1,0 +1,125 @@
+.ticket-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 560px;
+  height: 275px;
+  padding: 20px 3vw;
+  background-color: #FF601C;
+  border-radius: 25px;
+  padding: 20px 3vw;
+  box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.5);
+}
+
+.ticket-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 475px;
+  height: 110px;
+  background-color: #FFF;
+  font-size: 64px;
+  line-height: 78px;
+  font-weight: bold;
+  border-radius: 50px;
+  margin-bottom: 0;
+}
+.tickets {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.ticket-left {
+  height: 100%;
+  border-right: 1.6px solid #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.ticket-left p {
+  padding: 0 20px;
+  font-size: 30px;
+  line-height: 37px;
+  color: #FFF;
+}
+
+.ticket-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 24px;
+  width: 40%;
+}
+
+.ticket-right-info-header{
+  font-size: 20px;
+  line-height: 24px;
+  border-bottom: solid 1.6px #FFF;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 16px;
+  color: #FFF;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ticket-right-info{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 26px;
+  line-height: 31px;
+  color: #FFF;
+}
+
+
+/***************************MEDIA QUERIES***************************/
+
+@media(max-width:610px) {
+.ticket-box {
+ width: 480px;
+}
+.ticket-number {
+ width: 350px;
+ font-size: 55px;
+}
+}
+
+@media(max-width:500px) {
+.ticket-box {
+ width: 320px;
+ height: 200px;
+}
+.ticket-number {
+ width: 280px;
+ height: 90px;
+ font-size: 40px;
+ margin-top: 20px;
+}
+.ticket-left,
+.ticket-right{
+  width: 50%
+}
+.ticket-left img{
+ display: none;
+}
+.ticket-left p {
+  font-size: 18px;
+}
+.ticket-right-info-header{
+  font-size: 12px;
+  padding-bottom: 12px;
+}
+.ticket-right-info{
+  font-size: 16px;
+}
+.ticket-left{
+  padding-bottom: 12px;
+}
+}

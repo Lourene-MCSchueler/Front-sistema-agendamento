@@ -1,0 +1,37 @@
+.aside-desk nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  min-height: 814px;
+  height: 100%;
+  background-color: #FE885C;
+  border-radius: 30px;
+  margin-left: -2px;
+  margin-top: -1px;
+}
+
+.aside-desk ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aside-desk li {
+  list-style: none;
+  margin: 55px 0;
+}
+
+.aside-desk img {
+  cursor: pointer;
+  width: 50px;
+  height: 55px;
+}
+
+.aside-desk .active path[stroke]{
+  stroke: #FFF;
+}
+
+.aside-desk .active path[fill]{
+    fill: #FFF;
+}
